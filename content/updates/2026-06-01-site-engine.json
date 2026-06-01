@@ -1,0 +1,8 @@
+{
+  "title": "Site engine",
+  "date": "2026-06-01",
+  "stub": "How this site works — pages and posts built from JSON, no build step.",
+  "tags": ["meta", "site"],
+  "images": [],
+  "content": "<p>Blackheart Tech Forge runs on a small custom engine. Static pages and a shared layout wrap everything; <a href=\"/projects\">projects</a> and <a href=\"/updates\">updates</a> are each driven by JSON — title, date, stub, tags, images, and body content.</p><p>PHP picks a template per entry, builds the lists, and powers search. Add or edit JSON and the site updates — no compile step.</p><p>Project write-ups (like the <a href=\"/projects/2026-01-ai-dart-turret\">AI Dart Turret</a>) are separate from this note; this one is just about how the site itself is put together.</p>"
+}

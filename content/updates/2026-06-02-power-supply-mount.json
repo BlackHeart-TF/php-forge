@@ -1,0 +1,9 @@
+{
+  "title": "Power supply mount — almost there",
+  "date": "2026-06-02",
+  "stub": "PSU is on the mount, AC protection is in — just need to dial in the twist lock.",
+  "tags": ["hardware", "mechanical"],
+  "project": "2026-01-ai-dart-turret",
+  "images": [],
+  "content": "<p>The power supply mount for the AI Dart Turret is nearly done. The PSU bolts to the bracket as intended, and AC protection is already in place.</p><p>No heroic cable routing on this pass — the remaining work is dialing in the twist lock so the supply seats and locks the way it should. After that, powered bench tests on the drivers.</p>"
+}

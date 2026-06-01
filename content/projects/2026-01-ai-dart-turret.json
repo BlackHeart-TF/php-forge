@@ -1,0 +1,23 @@
+{
+  "title": "AI Dart Turret",
+  "date": "2026-01-15",
+  "progress": 32,
+  "stub": "Floor-standing pan-tilt dart turret (~4 ft on a tripod) with vision-guided targeting.",
+  "tags": ["hardware", "computer-vision", "automation", "embedded", "FPGA"],
+  "finished": [
+    "Pan-tilt mount assembled",
+    "Motion testing, Hold and sweeps complete",
+    "X-Shot Ragefire trigger/power integrated",
+    "Laser sight integrated"
+    
+  ],
+  "todo": [
+    "Mount Power supply",
+    "Camera input path (hdmi? mipi? udp?)",
+    "FPGA-assisted motion tracking bring-up",
+    "AI target selection and safe fire logic",
+    "Tracking accuracy tuning (FPGA Egomotion compensation)"
+  ],
+  "images": [],
+  "content": "<p>A floor-standing automated turret on a tripod — about four feet tall — with two-axis aiming, an X-Shot Ragefire dart launcher, FPGA-assisted motion tracking, and AI target selection.</p><p>Mechanical work covers the pan-tilt head, launcher linkage, and tripod mounting. Electronics handle motor drivers, firing control, camera input, and a dedicated power path. Software ties together frame capture, inference, and fire logic with sane limits.</p><p>Right now the power supply mount is close — PSU on the bracket, protection in, twist lock being dialed in — then back to powered driver tests.</p>"
+}
