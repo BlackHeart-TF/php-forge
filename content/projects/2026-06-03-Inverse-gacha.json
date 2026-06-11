@@ -1,0 +1,19 @@
+{
+  "title": "Raise a Cat Girl",
+  "date": "2026-06-03",
+  "progress": 5,
+  "stub": "feed and care for your randomly generated anime girls in this upcomming game!",
+  "tags": ["godot","mobile"],
+  "finished": [
+    "Entities hunger",
+    "Entities Ask you to coffee",
+    "Entities die, sometimes, permanently"
+  ],
+  "todo": [
+    "Modelling",
+    "Clothes shop",
+    "Story rich progression"
+  ],
+  "images": ["/img/date1.png","/img/date2.png"],
+  "content": "<p>Have you ever wanted to raise a small virtual pet in your pocket, but secretly wanted it to be a super cute anime girl, just to have her die because you didn't give her constant, undivided attention? Now you can!</p>"
+}

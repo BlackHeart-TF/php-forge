@@ -1,0 +1,9 @@
+{
+  "title": "Hunger Strikes!",
+  "date": "2026-06-11",
+  "stub": "Improving the hunger and energy balance of the girls, and some room edits",
+  "tags": ["software", "godot"],
+  "project": "2026-06-03-Inverse-gacha",
+  "images": [],
+  "content": "<p>Girls can eat sleep and harass you, with working notifications, better event response, and a basic levelling system.</p><p>The room supports custom item placement, though there's no editor yet</p>"
+}
