@@ -3,7 +3,7 @@
 /** @var string $content */
 $firstImage = $images[0] ?? '';
 ?>
-<section class="project-showcase" data-project-showcase>
+<section class="project-showcase<?= $images === [] ? ' project-showcase--text-only' : '' ?>" data-project-showcase>
     <?php if ($images !== []): ?>
     <div class="project-showcase__media">
         <button type="button" class="project-showcase__main" data-showcase-zoom aria-label="Zoom screenshot">

@@ -393,6 +393,10 @@ a {
   border-radius: 0.55rem;
 }
 
+.project-showcase--text-only {
+  grid-template-columns: 1fr;
+}
+
 .project-showcase__media {
   min-width: 0;
 }
