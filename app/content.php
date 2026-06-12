@@ -149,7 +149,10 @@ function serve_static_if_exists(string $path): bool
     if ($path === '/style.css') {
         $file = CONTENT_DIR . '/style.css';
     } elseif (preg_match('#^/img/(.+)$#', $path, $matches)) {
-        $file = CONTENT_DIR . '/img/' . $matches[1];
+        $name = $matches[1];
+        $contentFile = CONTENT_DIR . '/img/' . $name;
+        $publicFile = PUBLIC_DIR . '/img/' . $name;
+        $file = is_file($contentFile) ? $contentFile : $publicFile;
     } else {
         return false;
     }

@@ -1,7 +1,11 @@
 {
   "title": "Blackheart Tech Forge",
   "tagline": "Projects, updates, and experiments from the forge",
+  "description": "Software, hardware, and embedded projects from Blackheart Tech Forge.",
+  "keywords": ["development", "software", "hardware", "embedded", "web"],
+  "url": "https://blackhearttechforge.com",
   "footer": "Blackheart Tech Forge",
   "logo": "/img/logo.svg",
-  "logoAlt": "Blackheart Tech Forge"
+  "logoAlt": "Blackheart Tech Forge",
+  "ogImage": "/img/logo.svg"
 }

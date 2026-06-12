@@ -2,20 +2,18 @@
 /** @var array $site */
 /** @var string $title */
 /** @var string $body */
-/** @var bool $is_fragment */
-$is_fragment = $is_fragment ?? false;
-$siteTitle = $site['title'] ?? 'Site';
-$pageTitle = ($title === 'Home' ? '' : $title . ' · ') . $siteTitle;
+/** @var array $meta */
 $logo = site_logo($site);
 $logoAlt = site_logo_alt($site);
+$meta = $meta ?? build_page_meta($site, $title, request_path());
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?= e($pageTitle) ?></title>
-    <meta name="description" content="<?= e($site['tagline'] ?? '') ?>">
+    <title><?= e($meta['title'] ?? page_document_title($site, $title)) ?></title>
+<?php render('meta', ['meta' => $meta, 'site' => $site]) ?>
     <link rel="stylesheet" href="/style.css">
     <?php if ($logo !== null): ?>
         <link rel="icon" href="<?= e($logo) ?>" type="image/svg+xml">
@@ -29,7 +27,7 @@ $logoAlt = site_logo_alt($site);
                     <img class="brand-logo" src="<?= e($logo) ?>" alt="<?= e($logoAlt) ?>" width="56" height="56" decoding="async">
                 <?php endif ?>
                 <span class="brand-text">
-                    <span class="brand"><?= e($siteTitle) ?></span>
+                    <span class="brand"><?= e($site['title'] ?? 'Site') ?></span>
                     <?php if (!empty($site['tagline'])): ?>
                         <span class="tagline"><?= e($site['tagline']) ?></span>
                     <?php endif ?>
@@ -57,7 +55,7 @@ $logoAlt = site_logo_alt($site);
             <?php if ($logo !== null): ?>
                 <img class="footer-logo" src="<?= e($logo) ?>" alt="" width="32" height="32" decoding="async">
             <?php endif ?>
-            <p class="muted"><?= e($site['footer'] ?? $siteTitle) ?></p>
+            <p class="muted"><?= e($site['footer'] ?? $site['title'] ?? 'Site') ?></p>
         </div>
     </footer>
 </body>

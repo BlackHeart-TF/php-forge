@@ -1,0 +1,22 @@
+{
+  "title": "php-forge",
+  "date": "2026-06-12",
+  "progress": 80,
+  "stub": "This site — JSON and HTML in, routed pages out. No build step.",
+  "tags": ["php", "web", "meta"],
+  "finished": [
+    "JSON-driven projects and updates with search",
+    "Optional project links on updates",
+    "Progress bar, finished, and to-do lists on projects",
+    "SEO — meta tags, Open Graph, sitemap, robots.txt",
+    "Project screenshot gallery with lightbox",
+    "Home, contact, and Discord invite"
+  ],
+  "todo": [
+    "Dedicated social preview image",
+    "More project write-ups as they go public",
+    "Tag filtering on lists"
+  ],
+  "images": [],
+  "content": "<p><strong>php-forge</strong> is the engine behind Blackheart Tech Forge: JSON and HTML in, routed pages out — no build step.</p><p>Static pages, <a href=\"/projects\">projects</a>, and <a href=\"/updates\">updates</a> all live as editable content. PHP handles routing, templates, lists, and search. Add a JSON file, refresh, it shows up.</p><p>This project page is the site eating its own cooking.</p>"
+}

@@ -1,0 +1,9 @@
+{
+  "title": "php-forge site — gallery, SEO, and layout",
+  "date": "2026-06-12",
+  "stub": "Wrapped the public site into its own project: meta tags, showcase layout, and polish.",
+  "tags": ["meta", "php", "web", "site"],
+  "project": "2026-06-12-php-forge",
+  "images": [],
+  "content": "<p>Documented the forge site as a <a href=\"/projects/2026-06-12-php-forge\">project in php-forge</a> — appropriate, since the site is built on itself.</p><p>Recent work on this pass:</p><ul><li><strong>SEO</strong> — per-page descriptions, canonical URLs on the primary domain, Open Graph and Twitter cards, keywords from site config plus entry tags, <code>/sitemap.xml</code> and <code>/robots.txt</code></li><li><strong>Home and contact</strong> — about copy, Discord invite, maker-friendly contact page</li><li><strong>Project pages</strong> — progress, finished/to-do lists, optional link from updates; screenshot showcase with a main image, thumbnails, and click-to-zoom (portrait mobile shots finally behave)</li><li><strong>Branding</strong> — logo slot in the header, wider layout, panel styling on home</li></ul><p>Still on the list: a real OG banner image, more documented builds, maybe tag filters. The engine note from <a href=\"/updates/2026-06-01-site-engine\">June 1</a> still describes the basics; this update is the polish layer.</p>"
+}

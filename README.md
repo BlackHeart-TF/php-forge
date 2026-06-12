@@ -21,7 +21,9 @@ content/
 
 ## Site config (`content/site.json`)
 
-`title`, `tagline`, `footer`, optional `logo` (e.g. `/img/logo.svg`), optional `logoAlt`.
+`title`, `tagline`, `description`, `keywords` (site-wide meta keywords), `url` (primary domain for canonical/OG/sitemap — use one even if several point here), `footer`, optional `logo`, `logoAlt`, `ogImage`.
+
+Per-entry optional: `description` (meta override), `ogImage`, `keywords` (extra meta keywords merged with `tags`).
 
 Replace `content/img/logo.svg` with your own mark; PNG/WebP also work.
 

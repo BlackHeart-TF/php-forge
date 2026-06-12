@@ -6,6 +6,13 @@
 $data = $entry['data'];
 $relatedUpdates = $relatedUpdates ?? [];
 $linkedProjects = $linkedProjects ?? [];
+$projectImages = ($collection === 'projects' && !empty($data['images']) && is_array($data['images']))
+    ? array_values(array_filter($data['images'], 'is_string'))
+    : [];
+$updateImages = ($collection === 'updates' && !empty($data['images']) && is_array($data['images']))
+    ? $data['images']
+    : [];
+$projectContent = (string) ($data['content'] ?? '');
 ?>
 <article class="entry-detail">
     <p class="back"><a href="/<?= e($collection) ?>">← <?= e(ucfirst($collection)) ?></a></p>
@@ -57,6 +64,13 @@ $linkedProjects = $linkedProjects ?? [];
         </div>
     <?php endif;
 
+        if ($projectImages !== [] || trim($projectContent) !== ''): ?>
+        <?php render('project-showcase', [
+            'images' => $projectImages,
+            'content' => $projectContent,
+        ]) ?>
+    <?php endif;
+
         $finished = project_list_items($data, 'finished');
         $todo = project_list_items($data, 'todo');
         if ($finished !== [] || $todo !== []): ?>
@@ -85,17 +99,19 @@ $linkedProjects = $linkedProjects ?? [];
     <?php endif;
     endif ?>
 
-    <?php if (!empty($data['images']) && is_array($data['images'])): ?>
+    <?php if ($collection === 'updates'): ?>
+    <div class="prose">
+        <?= $data['content'] ?? '' ?>
+    </div>
+
+    <?php if ($updateImages !== []): ?>
         <div class="gallery">
-            <?php foreach ($data['images'] as $image): ?>
+            <?php foreach ($updateImages as $image): ?>
                 <img src="<?= e((string) $image) ?>" alt="">
             <?php endforeach ?>
         </div>
     <?php endif ?>
-
-    <div class="prose">
-        <?= $data['content'] ?? '' ?>
-    </div>
+    <?php endif ?>
 
     <?php if ($collection === 'projects' && $relatedUpdates !== []): ?>
         <section class="related">
